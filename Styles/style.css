@@ -2,8 +2,7 @@
 
 body {
     color: #444;
-    background: #e65591;
-    background: linear-gradient(353deg, rgba(230, 85, 145, 1) 14%, rgba(195, 129, 183, 1) 51%, rgba(148, 187, 233, 1) 91%);
+    background: #ffffff;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
