@@ -15,7 +15,7 @@ body {
 }
 
 .destaque {
-    color: #444;
+    color: red;
 }
 
 a.destaque {
@@ -55,7 +55,7 @@ a.destaque {
 }
 
 .profile__about .destaque {
-    color: white;  
+    color: black;  
 }
 
 .links ul {
