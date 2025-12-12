@@ -15,11 +15,11 @@ body {
 }
 
 .destaque {
-    color: red;
+    color: #444;
 }
 
 a.destaque {
-    color: blue;
+    color: #444;
 }
 
 .profile {
