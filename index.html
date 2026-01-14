@@ -8,6 +8,9 @@
     <meta name="description" content="Página de estudos Fluency Future.">
     <link rel="stylesheet" href="./Styles/style.css">
     <link rel="stylesheet" href="./Styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!--Meta tags para redes sociais-->
     <meta property="og:title" content="Perfil Bruna Faria">
     <meta property="og:type" content="website">
@@ -19,34 +22,54 @@
 
 </head>
 <body>
-  <div class="container">
-    <div class="profile">
 
-        <!--Seção superior-->
-        <div class="profile__header">
-            <img src="images/foto-perfil-bruna.jpeg" width="200px" alt="foto de perfil, mulher ruiva, com óculos escuros e cabelo solto">
+<div class="full-center-center">
+
+    <!--Caixa branca-->
+    <div class="box">
+
+        <!-- Avatar ou imagem de perfil-->
+         <div class="box__avatar">
+            <img src="images/foto-perfil.jpg" alt="foto de perfil, mulher ruiva, com óculos escuros e cabelo solto">
+         </div>
+
+         <!--Área de títulos e descrições-->
+         <div class="box__header">
             <h1>Bruna Faria</h1>
             <h2>Estudante de Front-end</h2>
-        </div>
+            <p>Tenho 32 anos, sou formada em Gestão Financeira (mas já percebi que números não são meu grande amor kkk) Resolvi mudar de rota e mergulhar no mundo do Front-End,começando pelo HTML. Acho fascinante como alguns códigos podem ganhar vida e virar um site inteiro! Estou no começo da jornada, mas cheia de curiosidade e vontade de aprender cada vez mais, porque agora sim estou me divertindo de verdade enquanto estudo. 🚀</p>
+         </div>
 
-        <div class="profile__about">
-            <p>Tenho 31 anos, sou formada em Gestão Financeira <span class="destaque">(mas já percebi que números não são meu grande amor kkk).</span> Resolvi mudar de rota e mergulhar no mundo do Front-End, começando pelo HTML. Acho fascinante como alguns códigos podem ganhar vida e virar um site inteiro! Estou no começo da jornada, mas cheia de curiosidade e vontade de aprender cada vez mais, porque agora sim estou me divertindo de verdade enquanto estudo. 🚀</p>
-        </div>
-     </div>
-     
-    <!--Seção de links-->
-    <div class="links">
-        <ul>
-            <li><a href=""><span class="emoji">&#128269;</span><span class="links__item">Linkedin</span></a></li>
-            <li><a href=""><span class="emoji">&#128194;</span><span class="links__item">Portifólio</span></a></li>
-            <li><a href=""><span class="emoji">&#128241;</span><span class="links__item">Instagram</span></a></li>
-        </ul>
+         <!--Área de conteúdo-->
+         <div class="box__content">
+
+            <!--Lista de links-->
+            <ul class="link-list">
+                <li>
+                    <a href="https://linkedin.com" target="_blank">
+                        <span><img src="images/linkedin-icon.svg" alt="Logo do Linkedin"></span>
+                        <span>Linkedin</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://instagram.com" target="_blank"> 
+                        <span><img src="images/instagram-icon.svg" alt="Logo do Instagram"></span>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank">
+                        <span><img src="images/clipboard-notes.svg" alt="Icon portifólio"></span>
+                        <span>Portifólio</span>
+                    </a>
+                </li>
+            </ul>
+         </div>
+
     </div>
 
-    <!--Teste de botão de like-->
-
-    <div class="like-button" role="button" aria-label="Curtir este conteúdo">Curtir</div>
-
-  </div>  
+</div> 
 </body>
 </html>

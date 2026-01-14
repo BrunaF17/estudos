@@ -1,33 +1,54 @@
-/* Iniciando meu primeiro arquivo em CSS */
+html * {
+    box-sizing: border-box;
+}
 
-body {
-    color: #444;
-    background: #ffffff;
-    min-height: 100vh;
+html, body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    min-width: 100%;
 }
 
-.container {
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 16px;
+html {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.destaque {
-    color: red;
+.full-center-center {
+    display: flex;
+    padding: 0 20px;
+    min-width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-a.destaque {
-    color: #444;
+.box {
+    width: 100%;
+    height: 100%;
+    padding: 64px;
+    display: block;
+    margin: 200px 0;
+    max-width: 636px;
+    position: relative;
+    padding-top: 128px;
+    border-radius: 24px;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.10);
 }
 
-.profile {
-    margin-top: 100px;
-    margin-bottom: 56px;
+.box__avatar {
+    left: 50%;
+    top: -100px;
+    width: 181px;
+    height: 200px;
+    position: absolute;
+    transform: translate(-50%);
 }
 
-.profile__header img {
+.box__avatar img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -36,60 +57,81 @@ a.destaque {
     margin: 0 auto 24px auto;
 }
 
-.profile__header h2 {
-    font-weight: 400;
+.box__header {
+    text-align: center;
+    margin-bottom: 56px;
 }
 
-.profile__header h1, .profile__header h2 {
+.box__header h1 {
+    color: #324054;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Sora;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.box__header h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #324054;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.box__header p {
+    margin: 0;
+    font-size: 16px;
+    color: #324054;
+}
+
+.link-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-list li {
+    border-radius: 16px;
+    background-color: #6e65c0;
+    height: 56px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+}
+
+.link-list li:hover {
+    background-color: #324054;
+}
+
+.link-list li a {
+    width: 100%;
+    display:flex;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: space-between;
+
+}
+
+.link-list li a span:last-child {
+    text-align: center;
+    width: 100%;
+}
+
+.link-list li:last-child {
     margin: 0;
 }
 
-.profile__header, .profile__about {
-    text-align: center;
-}
-
-.profile__about div {
-    background-color: none;
-    padding: 16px;
-    margin: 10px;
-}
-
-.profile__about .destaque {
-    color: black;  
-}
-
-.links ul {
-    list-style: none;
-}
-
-.links a {
-    display: flex;
-    height: 56px;
-    border: solid #444 1px;
-    border-radius: 35px;
-    text-decoration: none;
-    padding: 0 24px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-    color: #444;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.links a:hover {
-    border: solid #fff 1px;
-    color: #fff;
-    background: #444;
-}
-
-.links__item {
-    width: 100%;
-    text-align: center;
-}
-
-@media screen and (max-width: 720px) {
-    .profile__about {
-        font-size: 20px;
+@media screen and (max-width: 480px) {
+    .box {
+        padding: 40px;
+        padding-top: 140px;
+    }
+    
+    .box__header h1 {
+        font-size: 32px;
     }
 }
